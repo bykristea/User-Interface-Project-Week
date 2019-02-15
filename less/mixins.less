@@ -30,7 +30,7 @@
 
 // Content Styling
 
-.button(@text-color: @btn-color, @bg-color: @gen-bg-color) {
+.button(@text-color: @btn-color, @bg-color: @backgd-color) {
     color: @text-color;
     background-color: @bg-color;
     border: 1px solid @text-color;
@@ -55,5 +55,17 @@
         a {
             color: @bg-color;
         }
+    }
+}
+// Media Images
+.desktop-view() {
+    .img-mobile {
+        display: none;
+    }
+}
+
+.mobile-view() {
+    .img-desktop {
+        display: none;
     }
 }
