@@ -442,6 +442,7 @@ footer .copyright p {
   width: 135px;
   text-align: center;
   padding: 3% 0;
+  cursor: pointer;
 }
 @media (max-width: 900px) {
   .page-content .intro-content .intro-section .intro-text .btn {
@@ -581,6 +582,7 @@ footer .copyright p {
   width: 135px;
   text-align: center;
   padding: 3% 0;
+  cursor: pointer;
   width: 21.5%;
   font-size: 2rem;
   font-weight: bold;
