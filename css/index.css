@@ -820,6 +820,9 @@ fieldset {
     margin-bottom: 10%;
   }
 }
+.intro-about .intro-text {
+  margin: 10px;
+}
 @media (max-width: 900px) {
   .intro-about .intro-text {
     display: flex;
@@ -827,8 +830,8 @@ fieldset {
     align-content: flex-start;
   }
 }
-.intro-about .intro-text p {
-  padding-right: 10%;
+.intro-about .intro-text h2 {
+  color: black;
 }
 @media (max-width: 900px) {
   .intro-about .intro-text p {
