@@ -900,8 +900,9 @@ fieldset {
 }
 @media (max-width: 500px) {
   .responsive_grid .team_member {
-    width: 80vw;
-    margin-left: -40px;
+    width: 70vw;
+    height: 400px;
+    margin-left: -20px;
   }
 }
 .responsive_grid .team_member .info {
@@ -923,6 +924,11 @@ fieldset {
   -webkit-transition: all 0.2s ease-out 0.1s;
   font-size: 1.8em;
 }
+@media (max-width: 500px) {
+  .responsive_grid .team_member .info h5 {
+    font-size: 2rem;
+  }
+}
 .responsive_grid .team_member .info h6 {
   padding: 0 10px 0 0;
   font-size: 1.8rem;
@@ -934,6 +940,11 @@ fieldset {
   transition: all 0.2s ease-out 0.1s;
   -moz-transition: all 0.2s ease-out 0.1s;
   -webkit-transition: all 0.2s ease-out 0.1s;
+}
+@media (max-width: 500px) {
+  .responsive_grid .team_member .info h6 {
+    font-size: 2rem;
+  }
 }
 .responsive_grid .team_member .info_reveal {
   height: 100%;

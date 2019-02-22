@@ -111,8 +111,9 @@
         overflow: hidden;
         height: 300px;
          @media @mobile {
-             width: 80vw;
-              margin-left: -40px;
+             width: 70vw;
+             height: 400px;
+             margin-left: -20px;
          }
         .info {
             height: 100%;
@@ -133,6 +134,10 @@
                 -moz-transition: all .2s ease-out .1s;
                 -webkit-transition: all .2s ease-out .1s;
                 font-size: 1.8em;
+
+                @media @mobile {
+                    font-size: 2rem;
+                }
             }
 
             h6 {
@@ -146,6 +151,10 @@
                 transition: all .2s ease-out .1s;
                 -moz-transition: all .2s ease-out .1s;
                 -webkit-transition: all .2s ease-out .1s;
+
+                @media @mobile {
+                    font-size: 2rem;
+                }
             }
 
         }
