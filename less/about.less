@@ -40,11 +40,12 @@
 
         h2 {
             color: black;
+            padding: 10px;
             
         }
         p {
             // margin: 5% 0;
-            // padding: 10%;
+            padding: 10px;
 
             @media @tablet {
                 margin: 3% 0;
@@ -60,22 +61,23 @@
 
 .responsive_grid {
     .flex-row-center();
-    height: 800px;
+    height: 100%;
     margin-bottom: 30px;
     padding: 10px;
     list-style: none;
     
      @media @tablet {
          .flex-col-center(center);
-         width: 100%;
+         width: 100vw;
          height: 100%;
+         margin: 0 auto;
      }
 
     @media @mobile {
         .flex-col-center(center);
         width: 80vw;
         // height: 90%;
-        margin-left: 40px;
+        margin: 0 auto;
     }
 
     li {
@@ -129,7 +131,7 @@
 
          @media @mobile {
              width: 70vw;
-             height: 500px;
+             height: 100%;
              margin-left: -20px;
          }
 
@@ -141,6 +143,8 @@
                 transition: all .4s ease-out .1s;
                 -moz-transition: all .4s ease-out .1s;
                 -webkit-transition: all .4s ease-out .1s;
+
+               
             }
 
             h5 {
@@ -178,7 +182,7 @@
         }
 
     .info_reveal {
-        height: 700px;
+        height: 100%;
         transition: all .3s ease-in 0s;
         -moz-transition: all .3s ease-in 0s;
         -webkit-transition: all .23s ease-in 0s;
@@ -193,7 +197,7 @@
         }
 
         @media @mobile {
-            height: 500px;
+            height: 100%;
         }
        
 
