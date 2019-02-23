@@ -28,6 +28,14 @@
     align-items: @alignItems-choice;
 }
 
+.flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+}
+
+
 // Content Styling
 
 .button(@text-color: @btn-color, @bg-color: @backgd-color) {
