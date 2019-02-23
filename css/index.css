@@ -671,14 +671,20 @@ footer .copyright p {
   font-size: 1.8rem;
   line-height: 55px;
   color: #777;
-  background: url("https://images.unsplash.com/photo-1549193186-58c69c84600c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80") repeat center center;
+  background: url("https://images.unsplash.com/photo-1549193186-58c69c84600c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2767&q=80");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
 }
 .contactForm {
   max-width: 800px;
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 100px;
   position: relative;
 }
 #contact input[type="text"],
