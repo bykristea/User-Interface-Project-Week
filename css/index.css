@@ -848,9 +848,20 @@ fieldset {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  height: 800px;
+  margin-bottom: 30px;
   padding: 10px;
   list-style: none;
+}
+@media (max-width: 900px) {
+  .responsive_grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 500px) {
   .responsive_grid {
@@ -859,15 +870,14 @@ fieldset {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    margin-left: -70px;
+    margin-left: 40px;
   }
 }
 .responsive_grid li {
   cursor: pointer;
-  width: 16.66667%;
   padding: 0 10px 10px;
   display: block;
-  height: auto;
+  height: 100%;
   float: left;
   margin-bottom: 20px;
 }
@@ -902,12 +912,21 @@ fieldset {
   overflow: hidden;
   height: 100%;
 }
+@media (max-width: 900px) {
+  .responsive_grid .team_member {
+    width: 100%;
+    height: 500px;
+  }
+}
 @media (max-width: 500px) {
   .responsive_grid .team_member {
     width: 70vw;
-    height: 400px;
+    height: 500px;
     margin-left: -20px;
   }
+}
+.responsive_grid .team_member .info {
+  height: 100%;
 }
 .responsive_grid .team_member .info img {
   width: 100%;
@@ -948,7 +967,7 @@ fieldset {
   }
 }
 .responsive_grid .team_member .info_reveal {
-  height: 100%;
+  height: 700px;
   transition: all 0.3s ease-in 0s;
   -moz-transition: all 0.3s ease-in 0s;
   -webkit-transition: all 0.23s ease-in 0s;
@@ -956,6 +975,16 @@ fieldset {
   width: 100%;
   left: 0;
   background: #5E9FB9;
+}
+@media (max-width: 900px) {
+  .responsive_grid .team_member .info_reveal {
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .responsive_grid .team_member .info_reveal {
+    height: 500px;
+  }
 }
 .responsive_grid .team_member .info_reveal h6 {
   padding: 20px 8px 5px 8px;
@@ -967,7 +996,7 @@ fieldset {
 .responsive_grid .team_member .info_reveal p {
   padding: 0 8px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 1.2rem;
   line-height: 2em;
   color: #073a2e;
   font-weight: 400;
